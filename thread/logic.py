@@ -25,7 +25,7 @@ def get_associated_companies_info_by_company(company_number, depth=1):
     Returns:
         A list of information about all associated companies up to the given depth.
     """
-    service = CompaniesHouseSearch(access_token='rS5HLp_XcbkduRQmjE1m71FM4eX9Vq7uIXEQZKql')
+    service = CompaniesHouseSearch(access_token='')
     associated_companies = {0: [company_number],
                             1: []}
     officers = get_officers_by_company(associated_companies[0], service)
